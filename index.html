@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-icons-1.5.0/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Vozrost</title>
+</head>
+<body>
+    <div class="fundation">
+        <div class="item1">
+            <h4 class="item1-n1">
+                Tug'ilgan sana
+            </h4>
+            <div class="item1-n2">
+                <input id="god" type="text" placeholder="Yil..">
+                <input id="mes" type="text" placeholder="Oy..">
+                <input id="den" type="text" placeholder="Kun..">
+                <button class="bas" onclick="fun()" type="submit">submit</button>
+              </div>
+        </div>
+        <div class="bol">
+            <hr class="bolin">
+        </div>
+        <div class="item2">
+          <div class="itm2">
+            <div class="item2-n1">
+                  Bugun
+            </div>
+            <div class="item2-n2">
+                <h3 id="dat"></h3>
+            </div>
+          </div>
+            
+        </div>
+        <div class="max-width">
+            <div class="item3">
+                <div class="row1">
+                     <div class="r1col1">
+                        <div class="h11">Yoshingiz</div>
+                        <div class="colb1">
+                           <div id="yil1" class="yosh">0</div>
+                            <h4 class="soz">Yil</h4>
+                        </div>
+                        <div class="colb2">
+                            <div class="b2item1">
+                                <div id="oy1" class="it1">0</div>
+                                <div class="it2">Oy</div>
+                            </div>
+                            <div class="b2item2">
+                                <div id="kun1" class="it3">0</div>
+                                <div class="it4">Kun</div>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="r1col2">
+                        <div class="col2h1">Keyingi Tug'ilgan  <br> Kun</div>
+                        <a href="#"><i class="bi bi-calendar2-day-fill"></i></a>
+                        <h5 id="haf">Seshanba</h5>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="row-n1">Tavsif</div>
+                    <div class="row-n2">
+                        <div class="qator">
+                            <div class="element1">
+                                <h4 class="el">Yil</h4>
+                                <h2 id="yil" class="el1">0</h2>
+                            </div>
+                            <div class="element2">
+                                <h4 class="el2">Oy</h4>
+                                <h2 id="oy" class="el3">0</h2>
+                            </div>
+                            <div class="element3">
+                                <h4 class="el4">Hafta</h4>
+                                <h2 id="hafta" class="el5">0</h2>
+                            </div>
+                        </div>
+                        <div class="qator2">
+                            <div class="element4">
+                                <h6 class="el6">Kun</h6>
+                                <h4 id="kun" class="el7">0</h4>
+                            </div>
+                            <div class="element5">
+                                <h6 class="el8">Soat</h6>
+                                <h4 id="soat" class="el9">0</h4>
+                            </div>
+                            <div class="element6">
+                                <h6 class="el10">Daqiqa</h6>
+                                <h4 id="minut" class="el11">0</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+
+
+    <script>
+        function fun() {
+              var tim= new Date();
+              //kun
+              var m=tim.getDate();
+              //--
+              var k=tim.getMonth();
+              //oy
+              var h=(k+1) ;
+              //yil
+              var s=tim.getFullYear(); 
+              /*---------------------------------------*/
+              //kun
+              var m1=document.getElementById("den").value ;
+              //oy
+              var h1=document.getElementById("mes").value ;
+              //yil
+              var s1=document.getElementById("god").value ;
+              /*---------------------------------------*/
+
+
+              if (s1<=s && h1<=12 && m1<=31) {
+              //yil 
+              if (s1<s) {
+                  var yil=Number(s-s1) ;
+              } 
+              /*---------------------------------------*/
+
+              //kun
+              if (m1<=m) {
+                  var kun= Number(m-m1) ;
+              } else {
+                  var t = Number(m)+30 ;
+                  var kun= Number(t-m1) ;
+                  var oy = Number(oy-1) ;
+              }
+              /*---------------------------------------*/
+              //oy 
+              if (h1<=h) {
+                  var oy=Number(h-h1) ;
+              } else {
+                  var n=Number(yil-1) ;
+                  var yil=Number(n) ;
+                  var j=Number(h)+12 ;
+                  var oy=Number(j-h1) ;
+              }
+              /*---------------------------------------*/
+              //document.write(yil , " " , oy , " " , kun)
+              /*---------------------------------------*/
+
+
+              /*------------------------------------*/
+              var den = (kun+(30*oy)+(30*(yil*12))) ;
+              document.getElementById("kun").innerHTML=Math.floor(den) ;
+              /*------------------------------------*/
+              var ned = (den/7) ;
+              document.getElementById("hafta").innerHTML=Math.floor(ned); ;
+              /*------------------------------------*/
+              var mes = (ned/4) ;
+              document.getElementById("oy").innerHTML=Math.floor(mes) ;
+              /*------------------------------------*/
+              var chas = (den*24) ;
+              document.getElementById("soat").innerHTML=Math.floor(chas) ;
+              /*------------------------------------*/    
+              var min = (chas*60) ;
+              document.getElementById("minut").innerHTML=Math.floor(min)
+              /*------------------------------------*/
+              document.getElementById("yil").innerHTML=yil ;
+              /*------------------------------------*/
+
+
+
+              /*------------------------------------*/
+              document.getElementById("yil1").innerHTML=yil ;
+              /*------------------------------------*/
+              document.getElementById("oy1").innerHTML=oy ;
+              /*------------------------------------*/
+              document.getElementById("kun1").innerHTML=kun ;
+              /*------------------------------------*/
+
+              } else {
+
+              } 
+        }
+
+        function time(){
+            var d = new Date();
+            var dy = d.getDate();
+            var oy = d.getMonth();
+            var y = d.getFullYear();
+
+            var oylar=["January","February","March","April","May","June","July","August","September","Oktomber","November","December"]
+            document.getElementById("dat").innerHTML= dy + "." + oylar[oy] + ", " + y;
+        }
+        setInterval(time, 1000);
+    </script>
+</body>
+</html>

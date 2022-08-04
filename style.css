@@ -1,0 +1,423 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', 'sans-serif';
+}
+.max-width{
+    display: flex;
+    justify-content: center;
+}
+
+/* ....item1 styling */
+.item1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.item1-n1{
+    width: 40%;
+    font-size: 25px;
+    font-weight: 500;
+    color: #222;
+    padding: 5px 0 0 5px;
+}
+.item1-n2{
+    display: flex;
+    justify-content: end;
+    width: 60%;
+    align-items: center;
+}
+#god{
+    margin-right: 3px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid rgb(211, 103, 14);
+    color: rgb(211, 103, 14);
+}
+#mes{
+    margin-right: 3px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid rgb(211, 103, 14);
+    margin-bottom: 5px;
+    color: rgb(211, 103, 14);
+}
+#den{
+    margin-right: 3px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid rgb(211, 103, 14);
+    margin-bottom: 5px;
+    color: rgb(211, 103, 14);
+}
+.bas{
+    margin-right: 3px;
+    width: 80px;
+    height: 30px;
+    border: 2px solid rgb(211, 103, 14);
+    border-radius: 15px;
+    background-color: #fff;
+}
+.bas:hover{
+    background-color: rgb(211, 103, 14);
+    color: #234;
+}
+.bol{
+    height: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bolin{
+    width: 85vw;
+}
+
+/* ....item2 styling.... */
+.item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item2-n1{
+    width: 40%;
+    font-size: 25px;
+    font-weight: 500;
+    color: #222;
+    padding: 5px 0 0 5px;
+}
+.item2-n2{
+    color: rgb(75, 62, 62);
+    font-size: 20px;
+}
+.itm2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+}
+
+/* .....item3 styling... */
+.item3{
+    margin-top: 25px;
+    height: 520px;
+    width: 90vw;
+    border: 2px solid rgb(211, 103, 14);
+    border-radius: 20px;
+}
+.row1{
+    width: 100%;
+    height: 280px;
+    display: flex;
+}
+.r1col1{
+    width: 50%;
+    height: 100%;
+}
+.r1col2{
+    text-align: center;
+    width: 50%;
+    height: 100%;
+}
+.h11{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(53, 48, 48);
+}
+.yosh{
+    color: rgb(211, 103, 14);
+    font-size: 60px;
+}
+.soz{
+    font-size: 30px;
+    color: rgb(53, 48, 48);
+}
+.colb1{
+    width: 100%;
+    margin-top: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.colb2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.b2item1{
+    font-size: 16px;
+    color: rgb(53, 48, 48);
+    font-weight: 550;
+}
+.b2item2{
+    color: rgb(53, 48, 48);
+    font-size: 16px;
+    font-weight: 550;
+}
+.col2h1{
+    margin-top: 40px;
+    color: rgb(211, 103, 14);
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.bi{
+    font-size: 33px;
+    color: rgb(211, 103, 14);
+}
+#haf{
+    padding-top: 10px;
+    font-size: 20px;
+    color: rgb(53, 48, 48);
+}
+
+/* ......item3 row2 styling */
+.row2{
+    height: 240px;
+    width: 100%;
+}
+.row-n1{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(211, 103, 14);
+}
+.qator{
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.qator2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.qator2{
+    margin-top: 30px;
+    text-align: center;
+}
+.el{
+    color: rgb(53, 48, 48);
+    font-size: 25px;
+}
+.el1{
+    color: rgb(104, 94, 94);
+    font-size: 25px;
+}
+.el2{
+    color: rgb(53, 48, 48);
+    font-size: 25px;
+}
+.el3{
+    color: rgb(104, 94, 94);
+    font-size: 25px;
+}
+.el4{
+    color: rgb(53, 48, 48);
+    font-size: 25px;
+}
+.el5{
+    color: rgb(104, 94, 94);
+    font-size: 25px;
+}
+.el6{
+    color: rgb(53, 48, 48);
+    font-size: 18px;
+}
+.el7{
+    color: rgb(104, 94, 94);
+    font-size: 18px;
+}
+.el8{
+    color: rgb(53, 48, 48);
+    font-size: 18px;
+}
+.el9{
+    color: rgb(104, 94, 94);
+    font-size: 18px;
+}
+.el10{
+    color: rgb(53, 48, 48);
+    font-size: 18px;
+}
+.el11{
+    color: rgb(104, 94, 94);
+    font-size: 18px;
+}
+.element1{
+    width: 50px;
+}
+
+/* ...all responsive items */
+
+@media screen and (max-width:767px){
+    /* .....item1 responsive  */
+    .item1{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .item1-n1{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .item1-n2{
+        display: block;
+        width: 100%;
+    }
+    #god{
+        padding: 5px;
+        width: 26vw;
+    }
+    #mes{
+        padding: 5px;
+        width: 26vw;
+    }
+    #den{
+        padding: 5px;
+        width: 26vw;
+    }
+    .bas{
+        width: 65px;
+        height: 30px;
+        margin-right: 0px;
+    }
+    /* .....item2 responsive */
+}
+@media screen and (min-width:767px){
+    .colb2{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .colb1{
+        justify-content: space-evenly;
+    }
+    .h11{
+        font-size: 65px;
+    }
+    .yosh{
+        font-size: 75px;
+    }
+    .col2h1{
+        font-size: 45px;
+    }
+    .soz{
+        font-size: 45px;
+    }
+    .b2item1{
+        font-size: 24px;
+    }
+    .b2item2{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:395px){
+    .h11{
+        font-size: 40px;
+    }
+    .yosh{
+        font-size: 50px;
+    }
+    .col2h1{
+        font-size: 28px;
+    }
+    .b2item1{
+        font-size: 18px;
+    }
+    .b2item2{
+        font-size: 18px;
+    }
+    .el{
+        font-size: 20px;
+    }
+    .el1{
+        font-size: 20px;
+    }
+    .el2{
+        font-size: 20px;
+    }
+    .el3{
+        font-size: 20px;
+    }
+    .el4{
+        font-size: 20px;
+    }
+    .el5{
+        font-size: 20px;
+    }
+    .el6{
+        font-size: 12px;
+    }
+    .el7{
+        font-size: 12px;
+    }
+    .el8{
+        font-size: 12px;
+    }
+    .el9{
+        font-size: 12px;
+    }
+    .el10{
+        font-size: 12px;
+    }
+    .el11{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:315px){
+    .h11{
+        font-size: 30px;
+    }
+    .yosh{
+        font-size: 40px;
+    }
+    .soz{
+        font-size: 25px;
+    }
+    .b2item1{
+        font-size: 13px;
+    }
+    .b2item2{
+        font-size: 13px;
+    }
+    .col2h1{
+        font-size: 20px;
+    }
+    #haf{
+        font-size: 14px;
+    }
+    .row-n1{
+        font-size: 23px;
+    }
+
+    .el{
+        font-size: 15px;
+    }
+    .el1{
+        font-size: 15px;
+    }
+    .el2{
+        font-size: 15px;
+    }
+    .el3{
+        font-size: 15px;
+    }
+    .el4{
+        font-size: 15px;
+    }
+    .el5{
+        font-size:15px;
+    }
+}
